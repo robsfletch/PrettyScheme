@@ -1,0 +1,15 @@
+d 'PRETTYSCHEME': module containing pretty schemes in stata
+d
+d  prettyscheme is a module that offers nice schemes to create nicely
+d  formatted graphs in stata
+d
+d KW: graphing
+d
+d Requires: Stata version 14
+d
+d Distribution-Date: 20180115
+d
+d Author: Robert Fletcher, Stanford University
+d Support: email rsfletch@stanford.edu
+d
+F scheme-pretty1.scheme

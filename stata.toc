@@ -1,0 +1,3 @@
+v 0.0
+d 'Pretty': Easily Create pretty graphs in Stata
+p pretty
