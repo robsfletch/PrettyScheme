@@ -22,7 +22,7 @@ scatter price mpg, scheme(pretty1)
 ```
 
 # Related project
-This scheme is heavily used in my more extensive graphing project, **Pretty**, available at https://github.com/robsfletch/pretty. That package uses the pretty1 scheme as its default if you are interested in having that scheme as a default scheme when you graph in stata.
+This scheme is heavily used in my more extensive graphing project, **Pretty**, available at https://github.com/robsfletch/pretty. That package uses the pretty1 scheme as its default if you are interested in having that scheme as a default scheme when you graph in Stata.
 
 ## Uninstallation
 
