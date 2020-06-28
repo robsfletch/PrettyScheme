@@ -2,13 +2,11 @@
 
 color background  white
 
-margin twoway zero
+margin twoway   zero
 margin heading  "0 0 0 5"
-margin graph    "2 12 2 6"
+margin graph    "3 8 10 5"
 
 margin vlarge
-
-
 
 margin plabel            zero
 margin plabelbox         zero
@@ -16,50 +14,53 @@ margin pboxlabel         zero
 margin pboxlabelbox      zero
 
 
-anglestyle vertical_tick   horizontal
+anglestyle vertical_tick     horizontal
 anglestyle horizontal_tick   horizontal
 
+linewidth grid         vthin
+linewidth major_grid   vthin
+linewidth minor_grid   vthin
 linewidth axisline     none
 linewidth tick         thin
 linewidth minortick    none
+
+linepattern major_grid dash
 
 color grid         gs13
 color major_grid   gs13
 color minor_grid   gs13
 color axisline     gs13
 color tick         gs13
+color axis_title   gs3
+color tick_label   gs9
 
-linewidth grid vthin
-linewidth major_grid vthin
-linewidth minor_grid vthin
 
 gsize axis_title_gap  small
 gsize tickgap tiny
-gsize axis_title      medium
+gsize axis_title      medsmall
 gsize heading         large
-gsize label           medium
+gsize label           medsmall
 
 
+* yesno draw_majornl_hgrid no
+yesno draw_majornl_vgrid no
+* yesno use_labels_on_ticks yes
 
-yesno draw_major_hgrid yes
-yesno draw_major_vgrid yes
-yesno use_labels_on_ticks yes
 
-
-color histogram eltblue
-color histogram eltblue
+color histogram ebblue%70
+color histogram ebblue%70
 linewidth histogram medium
 color histogram_line gs16
 
-color symbol eltblue
+color symbol ebblue%70
 color backsymbol     gs8
 
 * Scatter
 symbol          p1              circle
 symbolsize      p1              medium
-color           p1markline      eltblue
+color           p1markline      ebblue%70
 linewidth       p1mark          vthin
-color           p1markfill      eltblue
+color           p1markfill      ebblue%70
 
 symbol          p2              diamond
 symbolsize      p2              medium
@@ -80,16 +81,16 @@ linewidth       p4mark          vthin
 color           p4markfill      emidblue
 
 * BAR GRAPHS
-color p1bar      	 eltblue
-color p2bar      	 erose
-color p3bar      	 eltgreen
-color p4bar      	 lavender
-color p5bar      	 edkbg
-color p6bar      	 erose
-color p7bar      	 eltblue
-color p8bar      	 erose
-color p9bar      	 eltblue
-color p10bar       erose
+color p1bar      	 ebblue%70
+color p2bar      	 purple%70
+color p3bar      	 eltgreen%70
+color p4bar      	 lavender%70
+color p5bar      	 edkbg%70
+color p6bar      	 erose%70
+color p7bar      	 ebblue%70
+color p8bar      	 erose%70
+color p9bar      	 ebblue%70
+color p10bar       erose%70
 
 color p1barline      white
 color p2barline   	 white
@@ -113,6 +114,3 @@ linewidth p9bar      thin
 linewidth p10bar     thin
 
 numstyle graph_aspect     0
-
-
-* twoway hist Education , scheme(pretty1) plotregion(margin(0)) lcolor(white) barwidth(.95) discrete xscale( lcolor(white) titlegap(3)) yscale(lcolor(white)) name("test4", replace)  xlabel( ,  angle(0) noticks labgap(1) glcolor(gs15) grid) ylabel( , angle(0) noticks labgap(2)) title("Education")

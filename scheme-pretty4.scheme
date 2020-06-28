@@ -19,7 +19,7 @@ margin pboxlabelbox      zero
 anglestyle vertical_tick   horizontal
 anglestyle horizontal_tick   horizontal
 
-linewidth axisline     none
+linewidth axisline     medthin
 linewidth tick         thin
 linewidth minortick    none
 
@@ -28,9 +28,10 @@ color major_grid   gs13
 color minor_grid   gs13
 color axisline     gs13
 color tick         gs13
+linewidth tickline none
 
 linewidth grid vthin
-linewidth major_grid vthin
+linewidth major_grid medthin
 linewidth minor_grid vthin
 
 gsize axis_title_gap  small
@@ -41,10 +42,13 @@ gsize label           medium
 
 
 
-yesno draw_major_hgrid yes
+yesno draw_major_hgrid no
 yesno draw_major_vgrid yes
 yesno use_labels_on_ticks yes
-
+* axisstyle vertical_nogrid  vertical_noline
+* axisstyle vertical_default vertical_withgrid
+* axisstyle horizontal_default horizontal_nogrid
+* linepattern major_grid "-"
 
 color histogram eltblue
 color histogram eltblue
