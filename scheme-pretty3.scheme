@@ -47,8 +47,7 @@ yesno draw_majornl_vgrid no
 * yesno use_labels_on_ticks yes
 
 
-color histogram ebblue%70
-color histogram ebblue%70
+color histogram ebblue
 linewidth histogram medium
 color histogram_line gs16
 
@@ -58,7 +57,7 @@ color backsymbol     gs8
 * Scatter
 symbol          p1              circle
 symbolsize      p1              medium
-color           p1markline      ebblue%70
+color           p1markline      ebblue%50
 linewidth       p1mark          vthin
 color           p1markfill      ebblue%70
 
@@ -81,16 +80,16 @@ linewidth       p4mark          vthin
 color           p4markfill      emidblue
 
 * BAR GRAPHS
-color p1bar      	 ebblue%70
-color p2bar      	 purple%70
-color p3bar      	 eltgreen%70
-color p4bar      	 lavender%70
-color p5bar      	 edkbg%70
-color p6bar      	 erose%70
-color p7bar      	 ebblue%70
-color p8bar      	 erose%70
-color p9bar      	 ebblue%70
-color p10bar       erose%70
+color p1bar      	 ebblue
+color p2bar      	 purple
+color p3bar      	 eltgreen
+color p4bar      	 lavender
+color p5bar      	 edkbg
+color p6bar      	 erose
+color p7bar      	 ebblue
+color p8bar      	 erose
+color p9bar      	 ebblue
+color p10bar       erose
 
 color p1barline      white
 color p2barline   	 white
